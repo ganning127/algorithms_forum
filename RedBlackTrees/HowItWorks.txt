@@ -1,0 +1,12 @@
+Red Black Tree: Self balancing binary search tree
+- Every node is either RED or BLACK
+- No more than one red node between two black nodes
+- Every node at the bottom of a node that doens't contain data is a black null leaf (don't hold any data)
+- Root node is always black
+- Each branch has the same number of black nodes
+
+Properties
+- if the length of a branch is n, that branch can have at most n/2 red nodes
+- the largest depth is red/black alternating nodes
+
+"between": between the node and its grandparent (parent of the parent node)
