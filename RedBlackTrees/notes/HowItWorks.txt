@@ -8,5 +8,6 @@ Red Black Tree: Self balancing binary search tree
 Properties
 - if the length of a branch is n, that branch can have at most n/2 red nodes
 - the largest depth is red/black alternating nodes
+- there will always be leaves (NULL nodes, because they are counted as black)
 
 "between": between the node and its grandparent (parent of the parent node)

@@ -1,0 +1,14 @@
+6 insertion cases
+
+1. Node is Root (just change root node to BLACK)
+2. Parent is BLACK (insert node as is RED)
+3. Parent is RED & aunt is RED
+    - recolor both to black
+    - recolor Grandparent to RED
+    - rebalance on Grandparent (do one of these 6 steps again)
+4. Parent is RED & aunt is BLACK and node is inside child
+5. Parent is RED and aunt is BLACK && node is outside child
+
+Resources
+- https://www.geeksforgeeks.org/red-black-tree-set-2-insert/
+- https://www.programiz.com/dsa/insertion-in-a-red-black-tree
