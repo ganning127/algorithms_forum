@@ -1,0 +1,13 @@
+Deletion cases (https://en.wikipedia.org/wiki/Red%E2%80%93black_tree#Notes_to_the_delete_diagrams)
+
+1. Root (black) with no children
+- Delete root node and replace with a leaf
+
+2. Node with left leaf and right child node (right child has two leaves)
+- Delete node and replace with right child
+
+3. Node has two children nodes (left and right)
+- Replace node with successor (left once and right as far as we can) (or predecessor (right once and as far left as we can), but whichever node we use, it needs to have at most one child)
+
+4. Node with no children (both are leaves)
+- if node is RED, then you can just delete it and do nothing else

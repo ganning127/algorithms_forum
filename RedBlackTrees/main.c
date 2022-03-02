@@ -25,13 +25,11 @@ void rb_setup();
 int main(void)
 {
     rb_setup(); // setup the red-black tree
-    rb_insert(4);
-    rb_insert(5);
-    rb_insert(6);
-    rb_insert(7);
-    rb_insert(1);
-    rb_insert(2);
-    rb_insert(3);
+
+    for (int i = 0; i < 100; i++)
+    {
+        rb_insert(i);
+    }
 
     rb_print(ROOT); // print the tree sideways
     return 0;
