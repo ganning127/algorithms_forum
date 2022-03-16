@@ -21,6 +21,8 @@ void rb_insert_fix(NodePtr z); // fix the tree after insertion
 void rb_rotate_right(NodePtr x);
 void rb_rotate_left(NodePtr x);
 void rb_setup();
+void rb_delete(int key);
+NodePtr rb_search(NodePtr root, int key);
 
 int main(void)
 {
@@ -31,7 +33,10 @@ int main(void)
         rb_insert(i);
     }
 
-    rb_print(ROOT); // print the tree sideways
+    NodePtr found = rb_search(ROOT, 50);
+    printf("Found: %d\n", found->key);
+
+    // rb_print(ROOT); // print the tree sideways
     return 0;
 }
 
@@ -198,4 +203,20 @@ void rb_print(NodePtr bst)
     ++depth;                  // increase depth
     rb_print(bst->left);      // recursive call on left nodes
     --depth;                  // reduce depth
+}
+
+void rb_delete(int key)
+{
+}
+
+NodePtr rb_search(NodePtr root, int key)
+{
+    if (root == NILL)
+        return NILL;
+    else if (root->key == key)
+        return root;
+    else if (key < root->key)
+        return rb_search(root->left, key);
+    else
+        return rb_search(root->right, key);
 }

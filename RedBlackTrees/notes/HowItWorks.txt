@@ -10,4 +10,4 @@ Properties
 - the largest depth is red/black alternating nodes
 - there will always be leaves (NULL nodes, because they are counted as black)
 
-"between": between the node and its grandparent (parent of the parent node)
+"between" the node and its grandparent (parent of the parent node)

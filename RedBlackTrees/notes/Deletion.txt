@@ -1,4 +1,5 @@
 Deletion cases (https://en.wikipedia.org/wiki/Red%E2%80%93black_tree#Notes_to_the_delete_diagrams)
+- deleted nodes are replaced with a NIL leaf
 
 1. Root (black) with no children
 - Delete root node and replace with a leaf
