@@ -1,5 +1,7 @@
 {
-    "files.associations": {
-        "ios": "c"
-    }
+  "files.associations": {
+    "ios": "c",
+    "stdio.h": "c",
+    "string.h": "c"
+  }
 }
